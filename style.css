@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin: 50px 0 30px 0px;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.pads {
+    width: 100%;
+    display: flex;
+
+}
+
+.pads > div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.pad1 {
+    background: #60e394;
+}
+.pad2 {
+    background: #D36060;
+}
+.pad3 {
+    background: #C060D3;
+}
+.pad4 {
+    background: #d3d160;
+}
+.pad5 {
+    background: #6860d3;
+}
+.pad6 {
+    background: #60b321;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+        left: 20%;
+        opacity: 0;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+    100% {
+        bottom: 0;
+        left: 80%;
+        opacity: 0;
+    }
+}
+
+.visuals > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0;
+}
